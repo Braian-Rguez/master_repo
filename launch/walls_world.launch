@@ -5,7 +5,7 @@
     
  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find two_wheels_description)/world/walls.world"/> 
+    <arg name="world_name" value="$(find master_welding)/world/first_world.world"/> 
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
@@ -15,7 +15,7 @@
   </include>
 
   
-  <include file="$(find two_wheels_description)/launch/spawn.launch"/>
+
   
     
   
