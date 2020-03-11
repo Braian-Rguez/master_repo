@@ -280,70 +280,13 @@
       </link>
       <pose frame=''>0.021725 -0.086458 0 0 -0 0</pose>
     </model>
-    <model name='bowl'>
-      <link name='link'>
-        <inertial>
-          <pose frame=''>0 0 0.0175 0 -0 0</pose>
-          <mass>0.1</mass>
-          <inertia>
-            <ixx>0.000250308</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000250308</iyy>
-            <iyz>0</iyz>
-            <izz>0.0004802</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <pose frame=''>0 0 0.0175 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.098</radius>
-              <length>0.035</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://bowl/meshes/bowl.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-0.09259 0.062483 0 0 -0 0</pose>
-    </model>
+    
     <state world_name='default'>
       <sim_time>138 751000000</sim_time>
       <real_time>139 193951374</real_time>
       <wall_time>1583368552 26692517</wall_time>
       <iterations>138751</iterations>
-      <model name='bowl'>
-        <pose frame=''>-0.092623 0.062519 1.015 -3e-06 4.7e-05 1.6e-05</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-0.092623 0.062519 1.015 -3e-06 4.7e-05 1.6e-05</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.32889 -0.088285 16.8035 1.96101 -1.30759 -3.13115</acceleration>
-          <wrench>-0.132889 -0.008829 1.68035 0 -0 0</wrench>
-        </link>
-      </model>
+      
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
